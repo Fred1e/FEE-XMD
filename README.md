@@ -39,7 +39,7 @@
 
 <p> <b>Connect With me:</b></p>
 <p>
-<a href="https://wa.me/255752593977"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/WhatsApp.png" width="13%"> </a>
+<a href="https://wa.me/255794469700"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/WhatsApp.png" width="13%"> </a>
   <a href="https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/WhatsApp.png" width="13%"> </a>
   <a href="https://www.instagram.com/fredi.simba.tz"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/Instagram2.png" width="14%"> </a>
   <a href="https://www.facebook.com/profile.php?id=61553209932337"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/Facebook.png" width="15%"> </a><a href="https://github.com/Fred1e"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/devto.png" width="15%"> </a><a href="https://twitter.com/fredisimba"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/twitter.png" width="13%"> </a>
@@ -135,7 +135,7 @@ sᴛᴀʀ 🌟 ᴍʏ ʀᴇᴘᴏ ɪғ ʏᴏᴜ ʟɪᴋᴇ ᴛʜɪs ʙᴏᴛ ®�
   For Help And Developer Join As Here ✔️
 <a href='https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f' target="_grey"><img alt='WHATSAPP' src='https://img.shields.io/badge/WhatsApp Channel Support-grey?style=for-the-badge&logo=whatsapp&logoColor=green'/></a>
 <a href='https://chat.whatsapp.com/BdVxcF4C00J4X4Sa39dpOi' target="_grey"><img alt='WHATSAPP' src='https://img.shields.io/badge/Join WhatsApp Group-grey?style=for-the-badge&logo=whatsapp&logoColor=green'/></a>
-<a href='https://wa.me/255752593977' target="_grey"><img alt='WHATSAPP' src='https://img.shields.io/badge/Wa Me Here-grey?style=for-the-badge&logo=whatsapp&logoColor=green'/></a>
+<a href='https://wa.me/255794469700' target="_grey"><img alt='WHATSAPP' src='https://img.shields.io/badge/Wa Me Here-grey?style=for-the-badge&logo=whatsapp&logoColor=green'/></a>
 <a href='https://www.youtube.com/@freeonlinetvT1' target="_grey"><img alt='YOUTUBE' src='https://img.shields.io/badge/Tutorial Here In Youtube-grey?style=for-the-badge&logo=youtube&logoColor=red'/></a>
 <a href='t.me/freditech' target="_grey"><img alt='TELEGRAM' src='https://img.shields.io/badge/Telegram For Dev-grey?style=for-the-badge&logo=telegram&logoColor=blue'/></a>
 <a href='https://t.me/+u3zlb5y6OfxhOTdk' target="_grey"><img alt='TELEGRAM' src='https://img.shields.io/badge/Telegram Group-grey?style=for-the-badge&logo=Telegram&logoColor=blue'/></a>
