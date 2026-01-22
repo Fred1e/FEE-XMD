@@ -1,6 +1,6 @@
 {
-  "name": "Fee-Xmd",
-  "version": "2.0.0",
+  "name": "Fer-xmd",
+  "version": "7.0.0",
   "description": "WhatsApp Multi Device Bot",
   "main": "index.js",
   "type": "commonjs",
@@ -20,8 +20,8 @@
     "bot-md",
     "whatsapp-multi-device"
   ],
-  "base": "https://github.com/Fred1e/Fee-Xmd",
-  "author": "Fredie",
+  "base": "https://github.com/Fredi/FEE-XMD",
+  "author": "Fredi",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
@@ -30,7 +30,7 @@
     "@hapi/boom": "^10.0.0",
     "@shineiichijo/marika": "^3.0.0",
     "@vitalets/google-translate-api": "latest",
-    "@whiskeysockets/baileys": "github:FezChat/SocketsBaileys",
+    "@whiskeysockets/baileys": "github:FezChat/SocketsBaileys.git",
     "acrcloud": "^1.4.0",
     "adm-zip": "^0.5.16",
     "aptoide-scraper": "^1.0.1",
