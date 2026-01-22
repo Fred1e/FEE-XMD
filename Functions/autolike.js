@@ -13,11 +13,11 @@ async function autolike(client, message) {
     // Log status processing
     console.log(chalk.blue(`Processing status ${key.id}, Key:`, JSON.stringify(key, null, 2)));
 
-    // React with 🤍
+    // React with 🩷
     const reactionResult = await client.sendMessage(remoteJid, {
-      react: { key, text: "🤍" },
+      react: { key, text: "🩷" },
     });
-    console.log(chalk.blue(`Reacted with 🤍 to status ${key.id}, Result:`, JSON.stringify(reactionResult, null, 2)));
+    console.log(chalk.blue(`Reacted with 🩷 to status ${key.id}, Result:`, JSON.stringify(reactionResult, null, 2)));
 
     // View status (mark as read)
     await client.readMessages([key]);
@@ -27,7 +27,7 @@ async function autolike(client, message) {
     // Fallback reaction method
     try {
       await client.sendMessage(message.key.remoteJid, {
-        reactionMessage: { key: message.key, text: "🤍" },
+        reactionMessage: { key: message.key, text: "🩷" },
       });
       console.log(chalk.blue(`Fallback reaction sent to status ${message.key.id}`));
     } catch (fallbackError) {
