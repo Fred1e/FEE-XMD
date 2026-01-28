@@ -5,12 +5,26 @@ const fs = require('fs');
 const path = require('path');
 const qrcode = require('qrcode-terminal');
 
+const usePostgresAuthState = require('./lib/postgresAuth');
+
 // Setup logger
 const logger = pino({ level: 'info' });
 
 async function startBot() {
     console.log('Starting FEE-XMD...');
-    const { state, saveCreds } = await useMultiFileAuthState('Session');
+
+    let authState;
+    if (process.env.DATABASE_URL) {
+        console.log('Using PostgreSQL (Supabase) for authentication');
+        authState = await usePostgresAuthState(process.env.DATABASE_URL);
+    } else {
+        console.log('Using Local File System for authentication');
+        authState = await useMultiFileAuthState('Session');
+    }
+
+    const { state, saveCreds } = authState;
+
+    const usePairingCode = !!process.env.PAIRING_NUMBER;
 
     const sock = makeWASocket({
         printQRInTerminal: false,
@@ -19,10 +33,25 @@ async function startBot() {
 
     });
 
+    if (usePairingCode && !sock.authState.creds.registered) {
+        console.log(`Using Pairing Code for number: ${process.env.PAIRING_NUMBER}`);
+        setTimeout(async () => {
+            try {
+                const code = await sock.requestPairingCode(process.env.PAIRING_NUMBER);
+                console.log('\n======================================================');
+                console.log(`  PAIRING CODE: ${code}`);
+                console.log('======================================================\n');
+            } catch (err) {
+                console.error('Failed to request pairing code:', err);
+            }
+        }, 3000);
+    }
+
     sock.ev.on('connection.update', (update) => {
         const { connection, lastDisconnect, qr } = update;
 
-        if (qr) {
+        // Only print QR if we are NOT using pairing code
+        if (qr && !usePairingCode) {
             console.log('QR Code received, scan it!');
             qrcode.generate(qr, { small: true });
         }

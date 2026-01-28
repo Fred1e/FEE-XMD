@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: vertigo-xmd
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOTNAME
+        value: Vertigo-XMD
+      - key: DATABASE_URL
+        value: "" # e.g., postgresql://postgres:password@db.supabase.co:5432/postgres
+      - key: PAIRING_NUMBER
+        value: "" # e.g., 1234567890 (optional, for pairing code)
