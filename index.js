@@ -30,7 +30,7 @@ async function startBot() {
         printQRInTerminal: false,
         auth: state,
         logger: logger,
-
+        browser: Browsers.ubuntu('Chrome'),
     });
 
     if (usePairingCode && !sock.authState.creds.registered) {
