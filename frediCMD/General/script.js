@@ -54,6 +54,13 @@ module.exports = async (context) => {
                                 url: 'https://fee-xmd.online'
                             })
                         },
+                            {
+                            name: 'cta_url',
+                            buttonParamsJson: JSON.stringify({
+                                display_text: '🗼 𝙑𝙞𝙨𝙞𝙩 Pair 𝙎𝙞𝙩𝙚',
+                                url: 'https://fee-ses.onrender.com'
+                            })
+                        },
                         // Row 2
                         {
                             name: 'cta_url',
