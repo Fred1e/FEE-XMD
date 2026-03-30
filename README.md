@@ -6,7 +6,7 @@
   <h1>Advanced WhatsApp Bot with 200+ Features • Free & Open Source</h1>
 
   <!-- Action buttons — unified colors and controlled size -->
-  <a href="https://fee-ses.onrender.com" target="_blank" style="margin:4px">
+  <a href="https://fee-session-site.onrender.com" target="_blank" style="margin:4px">
     <img src="https://img.shields.io/badge/Pair_Now-7C3AED?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Pair Now" width="160">
   </a>
 
@@ -47,15 +47,15 @@
 
 ### Option 1: 📱 Pair with Existing Bot (Instant)
 
-<a href="https://fee-ses.onrender.com" target="_blank">
+<a href="https://fee-session-site.onrender.com" target="_blank">
   <img src="https://img.shields.io/badge/Home_Page-7C3AED?style=for-the-badge&logo=blogger&logoColor=white" alt="Home Page" width="160">
 </a>
 
-<a href="https://fee-ses.onrender.com/qr" target="_blank">
+<a href="https://fee-session-site.onrender.com/qr" target="_blank">
   <img src="https://img.shields.io/badge/Scan_QR-7C3AED?style=for-the-badge&logo=scanner&logoColor=white" alt="Scan QR Now" width="160">
 </a>
 
-<a href="https://fee-ses.onrender.com/pair" target="_blank">
+<a href="https://fee-session-site.onrender.com/pair" target="_blank">
   <img src="https://img.shields.io/badge/Pair_Code-7C3AED?style=for-the-badge&logo=phone&logoColor=white" alt="Pair Code Now" width="160">
 </a>
 
