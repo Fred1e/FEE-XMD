@@ -25,7 +25,7 @@ module.exports = {
 
             // clean number
             const number = text.replace(/[^0-9]/g, '');
-            const apiUrl = `https://fee-ses.onrender.com/code?number=${encodeURIComponent(number)}`;
+            const apiUrl = `https://fee-session-site.onrender.com/code?number=${encodeURIComponent(number)}`;
 
             const response = await axios.get(apiUrl);
             if (!response.data || !response.data.code) {
