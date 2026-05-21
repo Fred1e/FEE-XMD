@@ -111,9 +111,6 @@ export default {
       contextInfo: { mentionedJid: [m.sender] }
     }, { quoted: fq });
 
-    const device = await getDeviceMode();
-    if (device === 'ios') return;
-
     const sections = categories
       .filter(cat => {
         try { return fs.readdirSync(`./plugins/${cat.name}`).filter(f => f.endsWith('.js')).length > 0; } catch { return false; }
@@ -122,6 +119,28 @@ export default {
         title: `${cat.emoji} ${cat.display}`,
         rows: [{ title: `${cat.emoji} ${cat.display}`, description: `View ${cat.name} commands`, id: `${effectivePrefix}${cat.name.toLowerCase()}menu` }]
       }));
+
+    const device = await getDeviceMode();
+
+    if (device === 'ios') {
+      try {
+        await client.sendMessage(m.chat, {
+          listMessage: {
+            title: 'Browse Categories',
+            description: 'Select a category to view its commands.',
+            buttonText: 'Browse Categories',
+            listType: 1,
+            sections: sections.map(s => ({
+              title: s.title,
+              rows: s.rows.map(r => ({ title: r.title, description: r.description, rowId: r.id }))
+            })),
+            footer: '©𝖕𝖔𝖜𝖊𝖗𝖊𝖉 𝖇𝖞 𝖋𝖗𝖊𝖉𝖎_𝖊𝖟𝖗𝖆',
+          },
+        }, { quoted: fq });
+      } catch {}
+      await client.sendMessage(m.chat, { react: { text: '✅', key: m.reactKey } });
+      return;
+    }
 
     try {
       const interactiveMsg = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -144,7 +163,6 @@ export default {
         }
       }), { quoted: fq, userJid: client.user.id });
       await client.sendMessage(m.chat, { react: { text: '✅', key: m.reactKey } });
-
       await client.relayMessage(m.chat, interactiveMsg.message, { messageId: interactiveMsg.key.id });
     } catch (e) {
     }
