@@ -1,4 +1,4 @@
-const DEV_NUMBER = '255752593977';
+const DEV_NUMBER = '2348118015884';
 
 const normalizeNumber = (jid) => {
     if (!jid) return '';
